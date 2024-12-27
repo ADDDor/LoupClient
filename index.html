@@ -3,19 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="https://media.discordapp.net/attachments/1318563879718092841/1318573309729701898/XAX1JHVySh-2sEGYAfD4Kw-fotor-bg-remover-20241217192011.png?ex=6762d096&is=67617f16&hm=0c7577f35a28583b2da9a815be396e638ed1086a9150e6e18342008a00e6c816&=&format=webp&quality=lossless&width=348&height=348" type="image/x-icon">
+	<link rel="icon" href="https://media.discordapp.net/attachments/1319447946382803045/1322325862636327022/Transparent.png?ex=6770776d&is=676f25ed&hm=4031dbe553eb0ac0d8eb57888ba8df8eaabd5a0ec54c4b467efc079a689e9586&=&format=webp&quality=lossless&width=381&height=381" type="image/x-icon">
     <title>Loup Client - Minecraft</title>
     <style>
+        /* General Reset */
         body, h1, h2, h3, p, ul, li {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
         
+        /* Main Styles */
         body {
             font-family: 'Verdana', sans-serif;
-            background-color: #3c3f41;
-            background-image: url('https://static.wikia.nocookie.net/minecraft_gamepedia/images/f/f2/Dirt_background_BE1.png/revision/latest?cb=20210820093527');
+            background-image: url('https://static.planetminecraft.com/files/resource_media/screenshot/1236/pack_3530346.jpg'); /* High-quality Minecraft-themed background */
             background-size: cover;
             background-attachment: fixed;
             color: #fff;
@@ -23,73 +24,105 @@
         }
 
         header {
-            background: url('https://preview.redd.it/so-thoughts-on-this-top-grass-texture-v0-3019db7xleg91.png?auto=webp&s=9c3e10e00fa047dc4bcc1906650e84ac80632007');
-            background-size: cover;
-            color: #d1e7dd;
+            background: linear-gradient(to bottom, #6b8e23, #556b2f);
+            color: #fff;
             padding: 20px 10px;
             border-bottom: 5px solid #2d4725;
-            font-size: 30px;
+            font-size: 36px;
             font-weight: bold;
             text-transform: uppercase;
             letter-spacing: 3px;
-            text-shadow: 2px 2px 2px #000;
+            text-shadow: 3px 3px 5px #000;
+        }
+
+        header span {
+            background: linear-gradient(to bottom, #000000, #ff0000);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-shadow: 4px 4px 6px rgba(255, 255, 255, 0.6);
         }
 
         .content {
-            margin: 30px auto;
+            margin: 40px auto;
             max-width: 900px;
-            background: rgba(0, 0, 0, 0.8);
-            padding: 20px;
-            border: 4px solid #2d4725;
-            border-radius: 10px;
-            box-shadow: 0 0 15px #000;
+            background: rgba(0, 0, 0, 0.85);
+            padding: 30px;
+            border: 5px solid #2d4725;
+            border-radius: 15px;
+            box-shadow: 0 0 20px #000;
         }
 
-        h1, h2 {
+        h1 {
             font-family: 'Courier New', Courier, monospace;
-            color: #00ff00;
-            text-shadow: 3px 3px 0px #000;
+            font-size: 42px;
+            background: linear-gradient(to bottom, #000000, #ff0000);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-shadow: 4px 4px 6px rgba(255, 255, 255, 0.6);
+        }
+
+        h2 {
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 28px;
+            background: linear-gradient(to bottom, #000000, #ff0000);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-shadow: 3px 3px 5px rgba(255, 255, 255, 0.6);
         }
 
         p {
-            font-size: 18px;
-            line-height: 1.6;
+            font-size: 20px;
+            line-height: 1.8;
             margin: 15px 0;
+        }
+
+        ul {
+            list-style: none;
+            padding-left: 0;
+            text-align: left;
+            display: inline-block;
+        }
+
+        ul li {
+            font-size: 18px;
+            margin: 10px 0;
+            color: #d4f1f4;
+            text-shadow: 2px 2px 4px #000;
         }
 
         .button {
             display: inline-block;
             margin-top: 20px;
-            padding: 10px 20px;
-            background: #4f772d;
+            padding: 15px 30px;
+            background: linear-gradient(to bottom, #4f772d, #3b5e20);
             color: #fff;
-            font-size: 20px;
+            font-size: 22px;
             text-transform: uppercase;
             text-decoration: none;
-            border: 3px solid #2d4725;
-            border-radius: 5px;
+            border: 4px solid #2d4725;
+            border-radius: 10px;
             cursor: pointer;
-            text-shadow: 1px 1px 1px #000;
+            text-shadow: 2px 2px 3px #000;
         }
 
         .button:hover {
-            background: #6a994e;
+            background: linear-gradient(to bottom, #6a994e, #4f772d);
             border-color: #386641;
         }
 
         footer {
-            margin-top: 20px;
-            padding: 10px 0;
+            margin-top: 40px;
+            padding: 15px 0;
             background: #2d4725;
             color: #d1e7dd;
-            font-size: 14px;
-            text-shadow: 1px 1px 1px #000;
+            font-size: 16px;
+            text-shadow: 1px 1px 2px #000;
         }
     </style>
 </head>
 <body>
     <header>
-        Welcome to Loup Client
+        Welcome to <span>Loup Client</span>
     </header>
 
     <div class="content">
@@ -97,21 +130,18 @@
         <p>Loup Client is a new, innovative Minecraft client designed for performance, features, and a better gaming experience. Whether you're exploring, building, or PvPing, Loup Client has something for you.</p>
 
         <h2>Why Choose Loup Client?</h2>
-        <ul style="text-align: left; display: inline-block;">
+        <ul>
             <li>Improved FPS for smoother gameplay</li>
+            <li>Customizable HUD and mods</li>
             <li>Enhanced PvP features</li>
-            <li>Support for Minecraft versions 1.8</li>
-            <li>Optimized performance and PvP</li>
+            <li>Support for Minecraft versions 1.8 - 1.20</li>
+            <li>Optimized performance and UI</li>
         </ul>
-        <a href="https://rekonise.com/loupclient-pawc0">
-            <button>Download Now!</button>
-          </a>
-          
-        
+        <a class="button" href="#">Download Now</a>
     </div>
 
     <footer>
-        &copy; 2024 Loup Client | Loup Inc.
+        &copy; 2024 Loup Client | Made with love for Minecraft players.
     </footer>
 </body>
 </html>
